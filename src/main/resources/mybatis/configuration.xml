@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration 
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+  
+  <typeAliases>
+    <typeAlias alias="userVo" type="com.javaex.vo.UserVo"></typeAlias>
+    <typeAlias alias="guestbookVo" type="com.javaex.vo.GuestBookVo"></typeAlias>
+    <typeAlias alias="boardVo" type="com.javaex.vo.BoardVo"></typeAlias>
+    <typeAlias alias="paging" type="com.javaex.vo.Paging"></typeAlias>
+  </typeAliases>
+  
+  <mappers>
+    <mapper resource="mybatis/mappers/mysite.xml" /><!-- resource 부분을 참조함 -->
+    <!-- mapper resource="mybatis/mappers/emaillist.xml" /> -->
+    
+    
+  </mappers>
+
+</configuration>
+ 
