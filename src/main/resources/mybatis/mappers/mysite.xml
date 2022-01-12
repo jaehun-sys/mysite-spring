@@ -33,9 +33,9 @@
 	</update>
 
 	<select id="emailCheckCnt" resultType="int" parameterType="String" >
-		 SELECT COUNT(*) CNT 
-		   FROM USERS 
-		  WHERE EMAIL = #{email}    
+		SELECT 	COUNT(*) CNT 
+		FROM 	USERS 
+		WHERE 	EMAIL = #{email}    
 	</select>
 
 </mapper>

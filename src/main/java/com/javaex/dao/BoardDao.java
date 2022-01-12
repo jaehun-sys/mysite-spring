@@ -12,12 +12,13 @@ public interface BoardDao {
 
 	public boolean update(BoardVo vo); // 글수정
 
-	public List<BoardVo> getList(int page, String search, String kwd); // 게시판
-
+	public List<BoardVo> getList(BoardVo vo); // 게시판
+//	int page, String search, String kwd
+	
 	public BoardVo getBoard(int boardno); // 글내용
 
 	public boolean upHit(int boardno); // 조회수 올리기
 
-	public int getTotalRow(String search, String kwd);
-
+	public int getTotalRow(BoardVo vo);
+//	String search, String kwd
 }
